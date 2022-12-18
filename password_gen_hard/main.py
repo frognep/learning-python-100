@@ -1,4 +1,4 @@
-#Password Generator Project
+# 09/20/22
 import random
 import objects
 
