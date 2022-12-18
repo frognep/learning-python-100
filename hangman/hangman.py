@@ -1,6 +1,5 @@
 import random
 from os import system
-from turtle import clear
 from hangman_words import word_list
 from hangman_art import logo, stages
 
@@ -13,7 +12,7 @@ print(logo)
 # test
 # print(f"pssst, word is {chosen_word}")
 
-# Creates blanks
+# Creates _'s as place holders for letters in chosen_word
 display = []
 for char in chosen_word:
     display += "_"
@@ -49,5 +48,6 @@ while not end_of_game and not user_lives == 0:
     
     if user_lives == 0:
         print("You have ran out of lives. You lose.")
+        print(f"Word was {chosen_word}.")
         
     print(stages[user_lives])
