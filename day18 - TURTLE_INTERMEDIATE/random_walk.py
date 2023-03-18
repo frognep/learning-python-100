@@ -1,6 +1,10 @@
 from turtle import Turtle, Screen
 from random import randint
 
+# What I learned:
+# How to create and utilize tuples
+# Improved upon clean function creation
+
 my_turtle = Turtle()
 my_screen = Screen()
 # ---------------------------- #
@@ -11,7 +15,7 @@ my_turtle.shape("turtle")
 my_turtle.speed(10)
 my_turtle.pensize(10)
 
-def rand_tuple():
+def random_tuple():
     r = randint(0,255)
     g = randint(0, 255)
     b = randint(0, 255)
@@ -43,10 +47,7 @@ def random_direction(object, distance, angle):
 
 for _ in range(200):
     random_direction(my_turtle, 20, 90)
-    my_turtle.color(rand_tuple())
-
+    my_turtle.color(random_tuple())
 
 # ---------------------------#
 my_screen.exitonclick()
-
-# random direction
