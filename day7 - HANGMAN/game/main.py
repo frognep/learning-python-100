@@ -1,8 +1,8 @@
 # 09/23/22
 import random
 from os import system
-from hangman_words import word_list
-from hangman_art import logo, stages
+from word_data import word_list
+from art import logo, stages
 
 end_of_game = False
 chosen_word = random.choice(word_list)
@@ -24,7 +24,7 @@ guesses = []
 while not end_of_game and not user_lives == 0:
     guess = input("Guess a letter: ").lower()
 
-    system("clear")
+    system("cls")
 
     if guess in guesses:
         print(f"You have already guessed {guess}.")
